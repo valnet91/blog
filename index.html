@@ -1,319 +1,299 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="zxx">
+
 <head>
-
-<!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Mon titre de Rock samedi 27 janvier 2024</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>GoDocs documentation theme</title>
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bulma.css">
-  <link rel="stylesheet" href="css/custom.css">
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="css/images/favicon.png">
+  <!-- theme meta -->
+  <meta name="theme-name" content="godocs-bulma" />
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- plugins -->
+  <link rel="stylesheet" href="plugins/bulma/bulma.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 </head>
+
 <body>
-    
-    <div class="columns">
-        <div class="column">
-            First column
-        </div>
-        <div class="column">
-            Second column
-        </div>
-        <div class="column">
-            Third column
-        </div>
-        <div class="column">
-            Fourth column
-        </div>
-    </div>
-    
-    <!-- Menu nav CSS Responsive
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->    
-    <nav>
-        <label for="toggle">☰</label>
-        <input type="checkbox" id="toggle">
-        <div class="main_pages">
-            <a href="/" class="logo">LOGO</a>
-            <a href="#">Accueil</a>
-            <a href="#">Actualité</a>
-            <a href="#">Contact</a>
-        </div>
-    </nav>
-    
-    
-    <!-- Primary Page Layout
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    
-    <div class="section hero">
-        <div class="container">
-            <div class="row">
-                <div class="one-half column">
-                    <h4 class="hero-heading">Stop coding non-responsive sites. Let users view sites from anywhere.</h4>
-                    <a class="button button-primary" href="http://getskeleton.com">Try Skeleton</a>
-                </div>
-                <div class="one-half column phones">
-                    <img class="phone" src="css/images/iphone.png">
-                    <img class="phone" src="css/images/iphone.png">
-                </div>
+
+<nav class="navbar is-sticky-top navigation" role="navigation" aria-label="main navigation">
+   <div class="container">
+      <div class="navbar-brand">
+         <a class="navbar-item" href="index.html">
+            <img class="img-fluid" src="images/logo.png" alt="godocs" width="155px">
+         </a>
+   
+         <a role="button" class="navbar-burger burger" aria-expanded="false" data-target="navbar-links">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+         </a>
+      </div>
+   
+      <div id="navbar-links" class="navbar-menu">
+         <div class="navbar-start ml-auto">
+            <a class="navbar-item" href="index.html">Home</a>
+            <a class="navbar-item" href="list.html">Inner Page</a>
+            <a class="navbar-item" href="search.html">Search Page</a>
+         </div>
+   
+         <div class="navbar-end ml-0">
+            <div class="navbar-item py-0">
+               <a href="changelog.html" class="btn btn-sm btn-outline-primary ml-4">changelog</a>
+               <a href="contact.html" class="btn btn-sm btn-primary ml-4">contact</a>
             </div>
-        </div>
-    </div>
-    
-    <div class="section values">
-        <div class="container">
-            <div class="row">
-                <div class="one-third column value">
-                    <h2 class="value-multiplier">67%</h2>
-                    <h5 class="value-heading">Purchase Increase</h5>
-                    <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
-                </div>
-                <div class="one-third column value">
-                    <h2 class="value-multiplier">90%</h2>
-                    <h5 class="value-heading">Multi-device Users</h5>
-                    <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
-                </div>
-                <div class="one-third column value">
-                    <h2 class="value-multiplier">66%</h2>
-                    <h5 class="value-heading">Sad Users</h5>
-                    <p class="value-description">Percentage of users that are frustrated with page load times.</p>
-                </div>
+         </div>
+      </div>
+   </div>
+</nav>
+
+<!-- banner -->
+<section class="section pb-0">
+   <div class="container">
+      <div class="columns is-justify-content-space-between is-align-items-center">
+         <div class="column is-7-desktop has-text-centered-mobile has-text-centered-tablet has-text-left-desktop">
+            <h1 class="mb-4">Documentation Theme By Themefisher Team</h1>
+            <p class="mb-4">Lorem ipsum dolor amet, consetetur sadiffspscing elitr, diam nonumy invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua At.</p>
+            <form class="search-wrapper" action="search.html">
+               <input id="search-by" name="s" type="search" class="input input-lg"
+                  placeholder="Search Here...">
+               <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+         </div>
+         <div class="column is-4-desktop hidden-on-tablet">
+            <img src="images/banner.jpg" alt="illustration" class="img-fluid">
+         </div>
+      </div>
+   </div>
+</section>
+<!-- /banner -->
+
+<!-- topics -->
+<section class="section pb-0">
+   <div class="container">
+      <h2 class="section-title">Bcolumnsse Your Topics</h2>
+      <div class="columns is-multiline">
+         <!-- topic -->
+         <div class="column is-3-widescreen is-4-desktop is-6-tablet">
+            <div class="card match-height">
+               <div class="card-body">
+                  <i class="card-icon ti-panel mb-5"></i>
+                  <h3 class="card-title h4">Basic Startup</h3>
+                  <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
+                  <a href="list.html" class="stretched-link"></a>
+               </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="section get-help">
-        <div class="container">
-            <h3 class="section-heading">Need help getting started?</h3>
-            <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If you want to learn more, just visit the documentation!</p>
-            <a class="button button-primary" href="http://getskeleton.com">View Skeleton Docs</a>
-        </div>
-    </div>
-    
-    <div class="section categories">
-        <div class="container">
-            <h3 class="section-heading">Responsive Images</h3>
-            <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest exploring solution to serving different images based on device size.</p>
-            <div class="row">
-                <div class="one-half column category">
-                    <img class="u-max-full-width" src="css/images/placeholder.png">
-                </div>
-                <div class="one-half column category">
-                    <img class="u-max-full-width" src="css/images/placeholder.png">
-                </div>
+         </div>
+         <!-- topic -->
+         <div class="column is-3-widescreen is-4-desktop is-6-tablet">
+            <div class="card match-height">
+               <div class="card-body">
+                  <i class="card-icon ti-credit-card mb-5"></i>
+                  <h3 class="card-title h4">Account Bill</h3>
+                  <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
+                  <a href="list.html" class="stretched-link"></a>
+               </div>
             </div>
-        </div>
-    </div>
-    
-    <title>Mon titre de Rock samedi 27 janvier 2024</title>
-    
-    index
-    
-    
-    
-    <!-- Section des liens sélectionnés -->
-    <ul class="Pour toutes les pages Page écris si les pages sont différentes que celle qui est sélectioné">
-        
-        
-        
-        
-        <li class=""><a href="page222.html">Mon titre de Rock Fi</a></li>
-        
-        
-        
-        <li class=""><a href="page333.html">Mon titre de Rock LO</a></li>
-        
-        
-    </ul>
-    
-    
-    
-    
-    <h1 class="test">Apprennez for le code Python les boucles for pour comprendre Python un vrai langage de programmation Python.</h1>
-    
-    
-    
-    
-    <h2 class="si la variable header_link est 1 les variables choisies s'afficheront de la page courante ">Apprennez for le code Python les boucles for pour comprendre Python un vrai langage de programmation Python.</h2>
-    
-    
-    
-    
-    
-    
-    <h2 class="for all_data si la valeur est 1 alors elle s'affiche sinon elle n'affiche rien">Apprennez for le code Python les boucles for pour comprendre Python un vrai langage de programmation Python.</h2>
-    
-    
-    
-    <h2 class="for all_data si la valeur est 1 alors elle s'affiche sinon elle n'affiche rien">Rock Fifi</h2>
-    
-    
-    
-    
-    
-    
-    <div>
-        Contenu de texte du fichier inndex
+         </div>
+         <!-- topic -->
+         <div class="column is-3-widescreen is-4-desktop is-6-tablet">
+            <div class="card match-height">
+               <div class="card-body">
+                  <i class="card-icon ti-package mb-5"></i>
+                  <h3 class="card-title h4">Our Features</h3>
+                  <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
+                  <a href="list.html" class="stretched-link"></a>
+               </div>
+            </div>
+         </div>
+         <!-- topic -->
+         <div class="column is-3-widescreen is-4-desktop is-6-tablet">
+            <div class="card match-height">
+               <div class="card-body">
+                  <i class="card-icon ti-settings mb-5"></i>
+                  <h3 class="card-title h4">Theme Facility</h3>
+                  <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
+                  <a href="list.html" class="stretched-link"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- /topics -->
 
+<!-- faq -->
+<section class="section pb-0">
+   <div class="container">
+      <h2 class="section-title">Mostly Asked Questions</h2>
+      <div class="columns masonry-wrapper">
+         <!-- faq item -->
+         <div class="column is-6-desktop">
+            <div class="card card-lg">
+               <div class="card-body">
+                  <h3 class="card-title h5">Will updates also be free?</h3>
+                  <p class="card-text content">Lorem, <a href="https://examplesite.com">link</a> <em>ipsum</em> dolor
+                     sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam
+                     omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat
+                     architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo,
+                     unde cum omnis vel sed temporibus. mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore
+                     reprehenderit illo, unde cum
+                     omnis vel sed temporibus. mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore
+                     reprehenderit
+                     illo, unde cum omnis vel sed temporibus.</p>
+               </div>
+            </div>
+         </div>
+         <!-- faq item -->
+         <div class="column is-6-desktop">
+            <div class="card card-lg">
+               <div class="card-body">
+                  <h3 class="card-title h5">Discounts for students and Non Profit Organizations?</h3>
+                  <p class="card-text content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                     praesentium
+                     nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit
+                     recusandae
+                     maxime perspiciatis iste placeat architecto.</p>
+               </div>
+            </div>
+         </div>
+         <!-- faq item -->
+         <div class="column is-6-desktop">
+            <div class="card card-lg">
+               <div class="card-body">
+                  <h3 class="card-title h5">I need something unique, Can you make it?</h3>
+                  <p class="card-text content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                     praesentium
+                     nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit
+                     recusandae
+                     maxime perspiciatis iste placeat architecto, mollitia delectus <a
+                        href="https://examplesite.com">link</a>
+                     ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed
+                     temporibus,
+                     repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus.
+                     Perferendis,
+                     ipsum?</p>
+               </div>
+            </div>
+         </div>
+         <!-- faq item -->
+         <div class="column is-6-desktop">
+            <div class="card card-lg">
+               <div class="card-body">
+                  <h3 class="card-title h5">Is there any documentation and support?</h3>
+                  <p class="card-text content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                     praesentium
+                     nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit
+                     recusandae
+                     maxime perspiciatis iste placeat architecto, mollitia delectus <a
+                        href="https://examplesite.com">link</a>
+                     ut ab quibusdam.</p>
+               </div>
+            </div>
+         </div>
+         <!-- faq item -->
+         <div class="column is-6-desktop">
+            <div class="card card-lg">
+               <div class="card-body">
+                  <h3 class="card-title h5">Any refunds?</h3>
+                  <p class="card-text content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                     praesentium
+                     nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit
+                     recusandae
+                     maxime perspiciatis iste placeat architecto.</p>
+               </div>
+            </div>
+         </div>
+         <!-- faq item -->
+         <div class="column is-6-desktop">
+            <div class="card card-lg">
+               <div class="card-body">
+                  <h3 class="card-title h5">What is a product key?</h3>
+                  <p class="card-text content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                     praesentium
+                     nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- /faq -->
 
-15 + 25 = 40
+<!-- call to action -->
+<section class="section">
+   <div class="container">
+      <div class="columns is-align-items-center">
+         <div class="column is-4-desktop has-text-centered hidden-on-tablet">
+            <img src="images/cta-illustration.jpg" class="img-fluid" alt="">
+         </div>
+         <div class="column is-8-desktop has-text-centered-mobile has-text-centered-tablet has-text-left-desktop">
+            <h2 class="mb-3">Still Didn&rsquo;t Find Your Answer?</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor invidunt ut
+               labore et dolore magna aliquyam</p>
+            <a href="contact.html" class="btn btn-primary">Submit a ticket</a>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- /call to action -->
 
+<footer>
+   <div class="container">
+      <div class="columns is-multiline is-align-items-center border-bottom py-5">
+         <div class="column is-4-desktop is-12-tablet">
+            <ul class="list-inline footer-menu has-text-centered has-text-left-desktop">
+               <li class="list-inline-item"><a href="changelog.html">Changelog</a></li>
+               <li class="list-inline-item"><a href="contact.html">contact</a></li>
+               <li class="list-inline-item"><a href="search.html">Search</a></li>
+            </ul>
+         </div>
+         <div class="column is-4-desktop is-12-tablet">
+            <a class="navbar-brand is-justify-content-center" href="index.html">
+               <img class="img-fluid" src="images/logo.png" alt="Hugo documentation theme">
+            </a>
+         </div>
+         <div class="column is-4-desktop is-12-tablet">
+            <ul class="list-inline social-icons has-text-right-desktop has-text-centered">
+               <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+               <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+               <li class="list-inline-item"><a href="#"><i class="ti-github"></i></a></li>
+               <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="py-4 has-text-centered">
+         <small class="text-light">Copyright © 2020 - Design &amp; Developed by <a href="https://themefisher.com">themefisher</a></small>
+      </div>
+   </div>
+</footer>
 
->pre>
-<h2>les titre de la section A</h2>
-<p>je parle de la section 2</p>
-wwwwwwwwwww..........................
-    </div>
-    <footer>
-  <div class="container">
-  
-  
-    <li 3 ><a href="index.html">index</a></li>
-  
-    <li 3 ><a href="titre-fifi-abacab-album-accents.html">Abacab, FIFI c'est le titre de l'album Fifi es-ce que les accents et le texte multiligne fonctionnent Je serai ravi de cela <h3>titre FIFI</h3></a></li>
-  
-    <li 3 ><a href="python-titre-loulou-abacab-album.html">Abacab, c'est Loulou le titre de l'album Python car nous aimons les python es-ce que les accents et le texte multiligne fonctionnent Je serai ravi de cela <h3>titre Loulou</h3></a></li>
-  
-    
+<!-- plugins -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<script src="plugins/masonry/masonry.min.js"></script>
+<script src="plugins/clipboard/clipboard.min.js"></script>
+<script src="plugins/match-height/jquery.matchHeight-min.js"></script>
 
-  </div>
-</footer>   index
-            dict_values([{'index': '[', 'titre': 'index', 'descriptif': "RIRi Vistez Paris en France lors d'un bref séjour de 2 ou 3 jours en amoureux, entre amis ou en famille.", 'groupe': 'Genesis', 'annee': '1981', 'H1': 'Apprennez for le code Python les boucles for pour comprendre Python un vrai langage de programmation Python.', 'content': 'Contenu de texte du fichier inndex\n\n\n15 + 25 = 40\n\n\n>pre>\n<h2>les titre de la section A</h2>\n<p>je parle de la section 2</p>\nwwwwwwwwwww..........................', 'header_link': '1', 'header_title': 'Mon titre de Rock samedi 27 janvier 2024', 'Template': 'template_index_standard', 'Page': 'index111', 'category': 'NO'}, {'titre': "Abacab, FIFI c'est le titre de l'album Fifi es-ce que les accents et le texte multiligne fonctionnent Je serai ravi de cela <h3>titre FIFI</h3>", 'descriptif': "# Fifi Vistez Paris en France lors d'un bref séjour de 2 ou 3 jours en amoureux, entre amis ou en famille.", 'groupe': 'Genesis', 'annee': '1981', 'H1': 'Rock Fifi', 'content': 'content/fichier_index.txt', 'header_link': '1', 'header_title': 'Mon titre de Rock Fi', 'Template': 'template_index_standard', 'Page': 'page222', 'category': 'NO'}, {'titre': "Abacab, c'est Loulou le titre de l'album Python car nous aimons les python es-ce que les accents et le texte multiligne fonctionnent Je serai ravi de cela <h3>titre Loulou</h3>", 'descriptif': "# Loulou Vistez Paris en France lors d'un bref séjour de 2 ou 3 jours en amoureux, entre amis ou en famille.", 'groupe': 'Genesis', 'annee': '1981', 'H1': 'Rock Loulou', 'content': 'content/fichier_index.txt', 'header_link': '', 'header_title': 'Mon titre de Rock LO', 'Template': 'template_index_standard', 'Page': 'page333', 'dossier_sortie': 'album', 'category': 'NO'}])
-
-  
-      
-    <li test ><a href="index.html">Mon titre de Rock samedi 27 janvier 2024</a></li>
-    
-    
-    
-  
-      
-    <li test ><a href="titre-fifi-abacab-album-accents.html">Abacab, FIFI c'est le titre de l'album Fifi es-ce que les accents et le texte multiligne fonctionnent Je serai ravi de cela <h3>titre FIFI</h3></a></li>
-    
-    
-  
-      
-    <li test ><a href="python-titre-loulou-abacab-album.html">Abacab, c'est Loulou le titre de l'album Python car nous aimons les python es-ce que les accents et le texte multiligne fonctionnent Je serai ravi de cela <h3>titre Loulou</h3></a></li>
-    
-    
-  
-  
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-
-<!-- 4 ??? Section des liens sélectionnés -->
-<ul>
-
-    
-
-    
-        <li 4 ><a href="titre-fifi-abacab-album-accents.html">Mon titre de Rock Fi</a></li>
-    
-
-    
-        <li 4 ><a href="python-titre-loulou-abacab-album.html">Mon titre de Rock LO</a></li>
-    
-
-
-
-      
-  
-      
-    <li 5 ><a href="titre-fifi-abacab-album-accents.html">Abacab, FIFI c'est le titre de l'album Fifi es-ce que les accents et le texte multiligne fonctionnent Je serai ravi de cela <h3>titre FIFI</h3></a></li>
-    
-  
-      
-    <li 5 ><a href="python-titre-loulou-abacab-album.html">Abacab, c'est Loulou le titre de l'album Python car nous aimons les python es-ce que les accents et le texte multiligne fonctionnent Je serai ravi de cela <h3>titre Loulou</h3></a></li>
-    
-  
-</ul>
-
-
-
-  
-  
-    <li 3 ><a href="index.html">index</a></li>
-
-    <li 3 ><a href="titre-fifi-abacab-album-accents.html">Abacab, FIFI c'est le titre de l'album Fifi es-ce que les accents et le texte multiligne fonctionnent Je serai ravi de cela <h3>titre FIFI</h3></a></li>
-
-    <li 3 ><a href="python-titre-loulou-abacab-album.html">Abacab, c'est Loulou le titre de l'album Python car nous aimons les python es-ce que les accents et le texte multiligne fonctionnent Je serai ravi de cela <h3>titre Loulou</h3></a></li>
+<!-- Main Script -->
+<script src="js/script.js"></script>
 
 </body>
 </html>
-    
-    <dl>
-        
-        <dt>index</dt>
-        <dd></dd>
-        
-        <dt>titre</dt>
-        <dd></dd>
-        
-        <dt>descriptif</dt>
-        <dd></dd>
-        
-        <dt>groupe</dt>
-        <dd></dd>
-        
-        <dt>annee</dt>
-        <dd></dd>
-        
-        <dt>H1</dt>
-        <dd></dd>
-        
-        <dt>content</dt>
-        <dd></dd>
-        
-        <dt>header_link</dt>
-        <dd></dd>
-        
-        <dt>header_title</dt>
-        <dd></dd>
-        
-        <dt>Template</dt>
-        <dd></dd>
-        
-        <dt>Page</dt>
-        <dd></dd>
-        
-        <dt>category</dt>
-        <dd></dd>
-        
-    </dl>
-    jinja-globals.lipsum(n=5, html=True, min=20, max=100)
-    pysimplegui
-    https://www.youtube.com/watch?v=K8CWyRiJkcA&list=PLqC1Lik2CUiiNhSuk5UdWpHmBKPEryrSo&index=9 la fille avec excel en plus source sur github
-    
-    pysimplegui peut il etre interpréter dans un navigateur
-    brython python navigateur
-    
-    -----------------------------
-    D:\anaconda4\Richou\Test1\app\prog_inter_2.py
-    je lance le script du chemin D:\anaconda4\Richou\Test1\app\prog_inter_2.py
-    et le chemin de mon C: est C:\Users\valnet
-    
-créons un système de gestion de site en python. base de données le fichier txt donnees_site.txt avec les variables est texte. des template en Jinja avec des boucles sur des variables category, et sur des variables spécifiques, des liens précédents et suivants. le tout piloté par un script python. Tu-as compris ?
